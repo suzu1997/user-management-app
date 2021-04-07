@@ -1,16 +1,13 @@
 {
   "env": {
     "browser": true,
-    "jquery": true,
-    "node": true, 
-    "es6": true 
+    "node": true,
+    "es6": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "plugins": ["react", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
@@ -23,7 +20,7 @@
     "semi": [2, "always"],
     "no-extra-semi": "warn",
     "no-undef": "warn",
-    "quotes": ["warn", "single"] ,
-    "space-before-blocks": ["warn", { "functions": "always" }] 
+    "quotes": ["warn", "double"],
+    "space-before-blocks": ["warn", { "functions": "always" }]
   }
 }
